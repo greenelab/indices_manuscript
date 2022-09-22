@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# WIP manuscript on citation indices
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
