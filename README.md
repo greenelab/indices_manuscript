@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/indices_manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/indices_manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/indices_manuscript/v/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba/>.
+The permalink for this webpage version is <https://greenelab.github.io/indices_manuscript/v/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/indices_manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`ad020b55a10e8e8af2609a0b7bbd9470ffb169ba`](https://github.com/greenelab/indices_manuscript/commit/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba).
+[`b4b5d0bd8e9d1f726d7721fc844a42e1beacae93`](https://github.com/greenelab/indices_manuscript/commit/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93).
