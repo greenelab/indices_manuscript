@@ -5,7 +5,7 @@ keywords:
 - pagerank
 - science of science
 lang: en-US
-date-meta: '2022-11-07'
+date-meta: '2022-11-19'
 author-meta:
 - Benjamin J. Heil
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="The field-dependent nature of PageRank values in citation networks" />
   <meta property="og:title" content="The field-dependent nature of PageRank values in citation networks" />
   <meta property="twitter:title" content="The field-dependent nature of PageRank values in citation networks" />
-  <meta name="dc.date" content="2022-11-07" />
-  <meta name="citation_publication_date" content="2022-11-07" />
+  <meta name="dc.date" content="2022-11-19" />
+  <meta name="citation_publication_date" content="2022-11-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/indices_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -66,10 +66,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/indices_manuscript/v/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba/))
+([permalink](https://greenelab.github.io/indices_manuscript/v/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93/))
 was automatically generated
-from [greenelab/indices_manuscript@ad020b5](https://github.com/greenelab/indices_manuscript/tree/ad020b55a10e8e8af2609a0b7bbd9470ffb169ba)
-on November 7, 2022.
+from [greenelab/indices_manuscript@b4b5d0b](https://github.com/greenelab/indices_manuscript/tree/b4b5d0bd8e9d1f726d7721fc844a42e1beacae93)
+on November 19, 2022.
 </em></small>
 
 ## Authors
@@ -120,70 +120,94 @@ Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
 ## Introduction
 
 There are more academic papers than any human can read in a lifetime.
-Determining which papers are important and in doing so solving the resulting prioritization problem is hard.
+Attention has been given to ranking papers, journals, or researchers by their "importance," assessed via various metrics.
+Citation count assumes the number of citations determines a paper's importance.
+The h-index and Journal Impact Factor focus on secondary factors like author or journal track records.
+Graph-based methods like PageRank or disruption index use the context of the citing papers to evaluate an article's relevance [@doi:10.1073/pnas.0507655102; @jif; @pagerank; @doi:10.1038/s41586-019-0941-9].
+Each of these methods has its strengths, and permutations exist that attempt to shore up specific weaknesses [@doi:10.1371/journal.pbio.1002541; @doi:10.1016/j.joi.2010.01.002; @doi:10.1007/s11192-017-2626-1; @doi:10.1162/qss_a_00068].
 
-Part of this difficulty is because "importance" is a subjective measure.
-Different metrics attempt to capture it through different approaches.
-Citation count assumes the number of citations determines a paper's importance, h-index and Journal Impact Factor focus more on secondary factors like author' or journals' track record, and graph-based methods like PageRank or disruption index use the context of the surrounding papers to evaluate a given article's relevance [@doi:10.1073/pnas.0507655102; @jif; @pagerank; @doi:10.1038/s41586-019-0941-9].
-Each of these methods have their own strengths, as well as various permutations that shore up their weaknesses [@doi:10.1371/journal.pbio.1002541; @doi:10.1016/j.joi.2010.01.002; @doi:10.1007/s11192-017-2626-1; @doi:10.1162/qss_a_00068].
+One objection to such practices is that "importance" is subjective.
+The San Francisco Declaration on Research Assessment (DORA) argues against using Journal Impact Factor, or any journal-based metric, to assess individual manuscripts or scientists [@doi:10.1126/science.1240319].
+DORA further argues in favor of evaluating the content of scientific content of articles and notes that any metrics used should be article-level ones [@https://sfdora.org/read/].
+However, even article-level importance ignores that the importance of a specific scientific output will fundamentally differ across fields.
+Nobel prize-winning work will often be less important in cancer biology if the prize-winning article is an astrophysics one.
 
-In particular, because there are differences between fields' citation practices [@doi:10.1017/S0269889720000022], scientists have developed approaches like normalizing the number of citations based on nearby papers in the citation network, 
-studying the relative performance of disruption index variants in a single field,
-rescaling fields' citation data to give more consistant PageRank results, and so on [@doi:10.1371/journal.pbio.1002541; @doi:10.1007/s11192-020-03406-8; @doi:10.1016/j.joi.2017.05.014; @doi:10/f48tvt]
-Such approaches account for differences between fields, but they tend to focus on normalizing out the effects a field has on a metric.
+Because there are differences between fields' citation practices [@doi:10.1017/S0269889720000022], scientists have developed strategies including normalizing the number of citations based on nearby papers in a citation network, rescaling fields' citation data to give more consistent PageRank results, and so on [@doi:10.1371/journal.pbio.1002541; @doi:10.1007/s11192-020-03406-8; @doi:10.1016/j.joi.2017.05.014; @doi:10/f48tvt].
+Such approaches normalize away field-specific effects, which might help to compare one researcher with another in a very different field but do not address the difference in the relevance of a topic between fields.
+This phenomenon of field-specific importance has been observed at the level of journal metrics.
+Mason and Singh recently noted that depending on the field, the journal *Christian Higher Education* is either ranked as a Q1 (top quartile) journal or a Q4 (bottom quartile) journal [@doi:10.1007/s11192-022-04402-w].
 
-We argue that this removal of field-specific signal obscures real differences in relevance.
-Intuitively, Nobel prize-winning work will stay at the bottom of a cancer biologist's paper pile if the article is about astrophysics.
-Trying to apply a universal ranking metric to papers or journals ignores that phenomenon and yields strange results.
-For example, Mason and Signh recently pointed out that depending on what field is evaluating it, the journal *Christian Higher Education* is either ranked as a Q1 (top quartile) journal or a Q4 (bottom quartile) journal [@doi:10.1007/s11192-022-04402-w].
+It is possible that, while global journal-level metrics fail to capture field-specific importance, article-level metrics are sufficiently granular that the importance of a manuscript remains constant across fields.
+We sought to examine the extent to which article-level metrics generalize between fields.
+We examine this using MeSH terms to define fields and use field-specific citation graphs to assess their importance within the field.
+While it is trivially apparent that journals or articles that do not have cross-field citations will have variable importance, we ignore these cases and include only those including citations in both fields, where we expect possible consistency.
+We first replicate previous findings that journal-level metrics can differ substantially among fields.
+We also find field-specific variability in importance at the article level.
+We make our results explorable through a web app that shows metrics for overlapping papers between pairs of fields.
 
-The purpose of this paper is not to create a new metric that attempts to measure articles' importance.
-Instead, we aim to shed light on a less-studied aspect of prioritizing papers: differences between fields.
-To that end we show differences between PageRanks for the same paper in different field citation networks.
-We then demonstrate that some of the differences are field-specific by estimating the distribution of possible citation networks with a degree-preserving graph shuffling method.
-We also demonstrate that while it is possible to rank journals using standard metrics [@eigenfactor], their rank changes depending on field.
-Finally, we make our results more easily available by creating a web app that visualizes pairs of fields with overlapping papers.
-
-Ultimately we show that there is great potential in analyzing articles while keeping field in mind.
-Going forward, we hope more field-aware methods of assessing article importance will be developed.
+Our results show that even article-level metrics can differ substantially among fields.
+We recommend that metrics used for assessing research outputs include field-specific, in addition to global, ones.
+While qualitative assessment of the content of manuscripts remains time-consuming, our results suggest that within-field and across-field assessment remains key to assessing the importance of research outputs.
 
 
 ## Results
 
-### Workflow
+### Field-specific Citation Networks and Importances
 
-We built citation networks from pairs of MeSH headings corresponding to fields.
-We then created 100 shuffled versions of each combined network using a degree-preserving shuffling approach (see Methods).
-We split both the original and shuffled networks into papers of each constituent field, then calculated the PageRank for all networks.
-Finally, we created percentile scores by comparing the PageRanks for the original and shuffled networks, and made our results available at (TODO web server URL).
+We built citation networks using MeSH headings to denote fields.
+We created a combined network and 100 shuffled versions for each pair of fields using a degree-preserving shuffling approach (see Methods).
+We then split the original and shuffled networks to maintain the same set of papers within each constituent field, calculating the PageRank for all networks.
+This process allows us to compare the manuscript's observed PageRank in each field with that constructed from a null that assumes no meaningful differences in citation patterns between fields.
+Finally, we calculated percentile scores by comparing the PageRanks for the original and shuffled networks and made our results available at (TODO web server URL).
 
 ![ 
 Schematic of the network analysis workflow. 
 We construct networks of citations from pairs of MeSH headings, create shuffled versions of the graphs, split the networks into their component fields, and calculate the PageRank for each article in the networks.
 ](./images/schematic.png "Workflow schematic"){#fig:workflow width="100%"}
 
-### The same paper will have different PageRanks in different fields
+### Journal Importances Differ Between Fields
 
-To demonstrate different relationships between fields' PageRanks, we visualized networks from four different field pairs.
-The first, nanotechnology/microscopy is a fairly average network in terms of inter-field PageRank correlation (Fig. @fig:heatmaps A).
-The second, immunochemistry/anatomy has a high correlation but still has outlier points (Fig. @fig:heatmaps B).
-The third and fourth, proteomics/metabolomics and computational biology/human genetics show two fields with a larger degree of difference between PageRanks in each field (Fig. @fig:heatmaps C,D).
+In an attempt to quantify the relative importance of journals, scientists have created rankings using metrics the Journal Impact Factor, which is essentially based on citations per article, and those that rely on more complex representations like Eigenfactor [@doi:10.5860/crln.68.5.7804]. 
+It has previously been reported that journal rankings differ substantially between fields using metrics based on citation numbers [@doi:10.1007/s11192-022-04402-w].
+We calculated a PageRank-based score for the journal as the median PageRank of manuscripts published in that journal for that field.
+We first sought to understand the extent to which journal importance differences replicated using PageRank.
+
+The journal *Science* provides an example of field-specific PageRank scores.
+In the fields of nanotechnology or microscopy, the journal *Science* is the most influential journal based on median PageRank (Fig. @fig:journals A). <!--just to be clear, is this in each of these fields individually or in the field pair? if the field pair, how should that be interpreted?-->
+However, for immunochemistry and anatomy, *Science* ranks fifth behind journals including *Nature* and *Cell* (Fig. @fig:journals B).
+<!--are there other examples of journals with big differences?-->
+
+<!--I'm not sure what to do with the below - is your argument that even specialty journals are often multi-disciplinary and consequently difficult to use as a proxy for importance? if so, what fraction of journals have 90% percent of their papers in only one "field" (MeSH heading here) vs what fraction have >1 MeSH heading with reasonable representation? It feels like something is missing in these sentences.-->
+Further, while journals are sometimes used as a proxy measure for field [@doi:10.1007/s11192-020-03406-8], we find they often play host to interdisciplinary papers that may be more accurately assigned to a different field.
+For example, "The metabonomic signature of celiac disease" is a paper with an extremely high PageRank in the field of metabolomics, but it was actually published in the *Journal of Proteome Research* [@doi:10.1021/pr800548z].
+
+![
+Differences between journal ranks across fields. Each point in the figure represents the median pagerank of all papers in the journal for the given fields.
+](./images/combined_journals.png "Differences between journals ranks"){#fig:journals width="100%"}
+
+### Manuscript PageRanks Differ Between Fields
+
+We examined the univariate distributions of PageRank across fields (Fig. TODO).
+To control for differences in the papers present, we also performed the analyses for field pairs using only the intersecting papers (Fig. TODO).
+We found that fields differed in their PageRank distributions.
+We also examined the correspondence of individual papers within the field-pair intersections.
+We selected a representative field pair (Fig. @fig:heatmaps A), a field pair above the median (Fig. @fig:heatmaps B), and two high correlation field pairs (Fig. @fig:heatmaps C,D).
+We found that many papers exhibited some correspondence between fields.
+However, given the differences in univariate distributions, it remained difficult to determine which differences might be meaningful.
 
 ![
 Heatmap of shared papers across fields
 ](./images/combined_heatmap.png "Heatmaps"){#fig:heatmaps width="100%"}
 
-### This variance is not entirely field independent
-It's hard to say that a paper with a large difference between field-specific PageRanks is more important in one field than the other.
-It's possible that the scores are skewed by different field sizes, or caused by randomness in MeSH tagging.
+We devised a strategy to generate an empirical null for a field pair under the assumption that the field pair represented a single, homogenous field.
+For each field-pair intersection, we performed a degree-distribution preserving permutation.
+We created 100 permuted networks for each field pair.
+We then calculated a percentile using the number of permuted networks with a lower PageRank for a manuscript than the true PageRank.
+A manuscript with a PageRank higher than all networks has a percentile of 100, and one lower than all permuted networks has a percentile of zero. <!--Can we use percentiles here? Since you are generating 100 permutations it may be more natural. Will require multiplication by 100 for all the places you present it.-->
+<!--at this point I am very confused about how what you are describing here is different than the first subsection-->
+We used the difference in the percentile in each field as the field-specific affinity for a given paper.
 
-To disentangle the random chance from the actual differences in network structure, we needed something to compare against.
-We decided on shuffling citation networks in a way that preserved their citation counts while randomizing which papers they cite.
-By doing so, we created 100 shuffled networks for each pair of fields where the degree distribution of the network is maintained but the global structure is removed from the networks.
-We then calculated a percentile score based on how many of the random networks had lower PageRank for a given paper than its true PageRank. 
-That is to say that a paper with a PageRank higher than all the random networks would have a score of one, a paper with a PageRank less than all the random networks would have a zero, and the rest would fall somewhere in between. 
-We used the difference in these scores between fields to determine the field-specific affinity for a given paper. 
-
+<!--I feel like from here through the end of this section it just becomes a verbal description of the figures. Can you revise this to make it more clear how this relates to the premise of your paper (field-specific importances don't just apply to journals, they apply to manuscripts too?). It'd probably be good to have a lot less description of the figures. You may need to add some global comparisons/tables/etc - perhaps for the most extreme differences across the dataset and/or which fields have overlapping papers but the most differences vs. many overlapping papers and high similarities?-->
 The nanotechnology/microscopy plot has a normal amount of variance, and clearly demonstrates the differences between fields (Fig. @fig:percentiles A).
 In the center of the plot are papers that have similar percentile scores in both fields.
 Towards the right side most papers have a large positive nanotech-microscopy score, indicating that they are more highly valued in the field of nanotechnology than in microscopy.
@@ -213,22 +237,9 @@ Meanwhile, the papers with high PageRanks in both fields tend to have similar pe
 The difference between percentile scores for four field pairs. 
 ](./images/combined_difference.png "Differences between fields' percentile scores"){#fig:percentiles width="100%"}
 
-### Journals aren't a great proxy for field, as they often have papers present from multiple fields.
-In addition to article metrics, papers are often prioritized by selecting prestigious journals.
-In an attempt to quantify the relative importance of journals, scientists have created rankings using metrics like Eigenfactor [@doi:10.5860/crln.68.5.7804]. 
-While such metrics return intuitively reasonable results, we discovered that the inherent aggregation that they apply masks differences between fields.
-
-When considering the fields nanotechnology or microscopy, the journal *Science* is far and away the most influential journal based on median PageRank (Fig. @fig:journals A).
-*Science*'s dominance isn't universal though — it ranks fifth behind journals like *Nature* and *Cell* when looking at immunochemistry and anatomy (Fig. @fig:journals B).
-Further, while journals are sometimes used as a proxy measure for field [@doi:10.1007/s11192-020-03406-8], we find they often play host to interdisciplinary papers that may be more accurately assigned to a different field.
-For example, "The metabonomic signature of celiac disease" is a paper with an extremely high PageRank in the field of metabolomics, but it was actually published in the *Journal of Proteome Research* [@doi:10.1021/pr800548z].
-
-![
-Differences between journal ranks across fields. Each point in the figure represents the median pagerank of all papers in the journal for the given fields.
-](./images/combined_journals.png "Differences between journals ranks"){#fig:journals width="100%"}
-
 ### Here's a web app 
 
+<!-- if this is going to be a section, something needs to be revised above - at the moment it's way short and just restates what's up there.-->
 To demonstrate our findings, we have also set up a web server with all pairs of networks instead of solely the ones shown in this paper.
 The web server can be found at X
 
@@ -298,36 +309,33 @@ The journals available for visualization are those with at least 25 papers for t
 
 ## Discussion/Conclusion
 
-We analyzed hundreds of pairwise citation networks in order to determine the effects of field on citation metrics.
-In doing so we found that there are, in fact, differences in PageRanks between fields that warrant some form of normalization when making comparisons.
-However, we also showed that these effects aren't solely driven by differences in citation practices that should be regressed out.
-Instead, there appear to be meaningful differences between fields for individual papers that exist in both fields.
-Normalizing out this variation or creating a single global ranking obscures meaningful signal about how papers are perceived in different communities.
+We analyze hundreds of field-pair citation networks to examine the extent to which article-level importance metrics vary between fields.
+As previously reported (TODO: ADD REFS), we find systematic differences in PageRanks between fields that would warrant some form of normalization when making cross-field comparisons with global statistics.
+However, we also find that field-specific differences are not driven solely by differences in citation practices.
+Instead, the importances of individual papers appear to differ meaningfully between fields.
+Global rankings or efforts to normalize out field-specific effects obscure meaningful differences in manuscript importance between communities.
 
-That is not to say that our analysis is perfect, however.
-For one thing, there are inherent issues with the concept of ranking papers.
-While we point out that not using field information when prioritizing papers can lose some of the nuance of the data, we're still just discussing different ways of measuring proxy variables.
-One's goal is often to read the papers most relevant to them, or the most influential papers in their field.
-However, since the ground truth of relevance or influence is difficult or impossible to quanitfy we end up using PageRank, citation count, Journal Impact Factor, or some other metric.
-While these proxy variables are hopefully correlated with the characteristics we care about, its important to acknowledge that they're not the same thing.
+As with any study, this research has certain limitations.
+We generate a background distribution of PageRanks for each field pair by performing a defined number of swaps.
+Our empirical results suggest that three times as many swaps as edges reach a point of stability <!--TODO: need to present at least some results on this-->, but certain network structures may require a different number.
+Another limitation is our selection of MeSH terms to represent fields.
+We used MeSH because it is a widely-annotated set of subjects in biomedicine and thresholded MeSH term sizes to balance having enough observations to calculate appropriate statistics with having sufficient granularity to capture fields.
+This resulted in fields at the granularity of "X" and "Y."
 
-Our percentile score is also an area for potential improvement.
-We decide to make three times as many swaps as our network has edges, but it is unclear what the ideal number of swaps is to ensure a network is drawn uniformly at random from the distribution of possible networks with the same degree distribution.
-Additionally, sampling graphs at random from degree-preserving network swaps isn't perfectly representative of what a potential alternate universe's citation network would look like.
-For that we'd need a way to avoid edge swaps that caused "back-in-time" citations, a method to swap citations to a paper based on what similar papers had cited, and the ability to add or subtract citations to and from a given paper, as the number of citations for a given paper is partly due to random chance.
-While outside of the scope of this paper, implementing these features into a citation graph randomization method would be an interesting avenue of future research.
+We also note that there are inherent issues with the premise of ranking manuscript importances.
+We sought to understand the extent to which such rankings were stable between fields after correcting for field-specific citation practices.
+We found limited stability between fields, mostly between closely-related fields, suggesting that the concept of a universal ranking of importances is difficult to justify.
+In the way that reducing a distribution to a Journal Impact Factor distorts assessment, attempting to use a single universal score to represent importance across fields poses similar challenges at the level of individual manucripts.
+Furthermore, this work's natural progression would extend to estimating the importance of individual manuscripts to individual researchers.
+Thus, a holistic measure of importance would need to include a distribution of scores not only across fields but across researchers.
+It may ultimately be impossible to calculate a meaningful importance score.
+The lack of ground truth for importance is an inherent feature, not a bug, of science's step-wide progression.
 
-A third limitation of our paper comes from the way we selected MeSH terms.
-Our threshold number of papers required to include a field was chosen so that we could investigate a diverse set of fields while still keeping a reasonable amount of papers in each combination of fields.
-However, it is possible that a more (or less) granular field selection approach would give clearer results.
-
-Similar approaches to ours may be helpful for an expert in one field learning a new one.
-For example, a expert in computational biology might get a better idea of the difference in perspective across fields by reading articles that have a high percentile score in genetics and a low score in computational biology.
-While such papers are important in genetics, the computational biologist would be unlikely to be familiar with them due to the field difference.
-
-Ultimately we hope to see more analyses going forward use field information for evaluating the influence of scientific articles.
-We believe this to be particularly important in the case of interdisciplinary papers that exist between fields by their very nature.
-A paper largely ignored in one field may be groundbreaking in another, and that dynamic should be accounted for when attempting to make sense of citation networks.
+Shifting from the perspective of evaluation to discovery can reveal more appropriate uses for these types of statistics.
+Field-pair calculations for such metrics may help with self-directed learning of new fields.
+An expert in one field, e.g., computational biology, who aims to learn more about genetics may find manuscripts with high importance in genetics and low importance in computational biology to be important reads.
+These represent manuscripts not currently widely cited in one's field but highly influential in a target field.
+Our application can reveal these manuscripts for MeSH field pairs, and our source code allows others to perform our analysis with different granularity.
 
 
 ## References {.page_break_before}
