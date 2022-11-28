@@ -219,6 +219,30 @@
     }
 },
   {
+    "id": "carlsson2009",
+    "title": "Field delineation using medical subject headings (MeSH)-An alternative way to aggregate data in the web of science",
+    "page": "914-917",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Håkan",
+        "family": "Carlsson"
+      },
+      {
+        "given": "Ed CM",
+        "family": "Noyons"
+      }
+    ],
+    "container-title": "12th International Conference on Scientometrics and Informetrics",
+    "type": "article-journal"
+  },
+  {
     "id": "To1WoeSQ",
     "URL": "https://arxiv.org/abs/0905.4913",
     "number": "0905.4913",
