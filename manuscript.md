@@ -1,11 +1,11 @@
 ---
-title: The field-dependent nature of PageRank values in citation networks
+title: The Field-Dependent Nature of PageRank Values in Citation Networks
 keywords:
 - citation metrics
 - pagerank
 - science of science
 lang: en-US
-date-meta: '2022-12-05'
+date-meta: '2022-12-06'
 author-meta:
 - Benjamin J. Heil
 - Casey S. Greene
@@ -15,12 +15,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="The field-dependent nature of PageRank values in citation networks" />
-  <meta name="citation_title" content="The field-dependent nature of PageRank values in citation networks" />
-  <meta property="og:title" content="The field-dependent nature of PageRank values in citation networks" />
-  <meta property="twitter:title" content="The field-dependent nature of PageRank values in citation networks" />
-  <meta name="dc.date" content="2022-12-05" />
-  <meta name="citation_publication_date" content="2022-12-05" />
+  <meta name="dc.title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
+  <meta name="citation_title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
+  <meta property="og:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
+  <meta property="twitter:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
+  <meta name="dc.date" content="2022-12-06" />
+  <meta name="citation_publication_date" content="2022-12-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/indices_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/973020713e98d2e14242958c6997ae0aef37c803/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/973020713e98d2e14242958c6997ae0aef37c803/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/973020713e98d2e14242958c6997ae0aef37c803/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -52,6 +52,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
+- content/manual-references-hgp.json
 - content/manual-references.json
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
@@ -66,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/indices_manuscript/v/973020713e98d2e14242958c6997ae0aef37c803/))
+([permalink](https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/))
 was automatically generated
-from [greenelab/indices_manuscript@9730207](https://github.com/greenelab/indices_manuscript/tree/973020713e98d2e14242958c6997ae0aef37c803)
-on December 5, 2022.
+from [greenelab/indices_manuscript@88ec860](https://github.com/greenelab/indices_manuscript/tree/88ec8604abd54783ec84f752ff9fafbfb1f40b21)
+on December 6, 2022.
 </em></small>
 
 ## Authors
@@ -137,17 +138,18 @@ Each of these methods has limitations, and permutations exist that attempt to sh
 
 One objection to such practices is that "importance" is subjective.
 The San Francisco Declaration on Research Assessment (DORA) argues against using Journal Impact Factor, or any journal-based metric, to assess individual manuscripts or scientists [@doi:10.1126/science.1240319].
-DORA further argues in favor of evaluating the content of scientific content of articles and notes that any metrics used should be article-level ones (https://sfdora.org/read/).
-However, even article-level importance ignores that the importance of a specific scientific output will fundamentally differ across fields.
-Nobel prize-winning work will often be less important in cancer biology if the prize-winning article is an astrophysics one.
+DORA further argues in favor of evaluating the scientific content of articles and notes that any metrics used should be article-level (https://sfdora.org/read/).
+However, even article-level metrics often ignore that the importance of a specific scientific output will fundamentally differ across fields.
+Even Nobel prize-winning work may be unimportant to a cancer biologist if the prize-winning article is about astrophysics.
 
 Because there are differences between fields' citation practices [@doi:10.1017/S0269889720000022], scientists have developed strategies including normalizing the number of citations based on nearby papers in a citation network, rescaling fields' citation data to give more consistent PageRank results, and so on [@doi:10.1371/journal.pbio.1002541; @doi:10.1007/s11192-020-03406-8; @doi:10.1016/j.joi.2017.05.014; @doi:10/f48tvt].
-Such approaches normalize away field-specific effects, which might help to compare one researcher with another in a very different field but do not address the difference in the relevance of a topic between fields.
+Such approaches normalize away field-specific effects, which might help to compare one researcher with another in a very different field.
+However, they do not address the difference in the relevance of a topic between fields.
 This phenomenon of field-specific importance has been observed at the level of journal metrics.
 Mason and Singh recently noted that depending on the field, the journal *Christian Higher Education* is either ranked as a Q1 (top quartile) journal or a Q4 (bottom quartile) journal [@doi:10.1007/s11192-022-04402-w].
 
 It is possible that, while global journal-level metrics fail to capture field-specific importance, article-level metrics are sufficiently granular that the importance of a manuscript remains constant across fields.
-We sought to examine the extent to which article-level metrics generalize between fields.
+We investigate the extent to which article-level metrics generalize between fields.
 We examine this using MeSH terms to define fields and use field-specific citation graphs to assess their importance within the field.
 While it is trivially apparent that journals or articles that do not have cross-field citations will have variable importance, we ignore these cases.
 We include only those including citations in both fields, where we expect possible consistency.
@@ -170,7 +172,7 @@ We calculated a field-specific PageRank-based score for each journal as the medi
 We first sought to understand the extent to which PageRank replicated journal ranking differences across fields.
 
 To begin, we compared the differences in ranking between the top fifty journals in nanotechnology and their corresponding ranks in microscopy.
-While the ranks were correlated (TODO:CORRELATION STAT) there was a great deal of variance, especially for journals outside the top 20 in nanotechnology (Fig. @fig:journal B).
+While the ranks were correlated (r=.75) there was a great deal of variance, especially for journals outside the top 20 in nanotechnology (Fig. @fig:journal B).
 We then examined the top-ranked journal in each of our 45 fields to determine whether the top-ranking journal was consistent across fields (Fig. @fig:journal C).
 We found that the most commonly top-ranked journal was *Science*.
 This was unsurprising, given that it tends to rank highly among global journal-level metrics such as eigenfactor.
@@ -198,8 +200,7 @@ All plots restrict the set of journals to those with at least 50 papers in the d
 We split the citation network into its component fields and calculated the PageRank for each article (Fig. @fig:distribution A).
 We examined the distribution of PageRanks across fields and found that they differed greatly (Fig. @fig:distribution B).
 We first examined whether the citation practices of fields contributed to importance differences.
-Investigating manuscripts that appeared in pairs of fields, we found that the distribution of importances matched the network more than that of the alternative topic area of the manuscript (Fig. @fig:distribution B, C).
-Given the differences in distributions in articles shared by these fields (Fig. @fig:distribution D), we found it difficult to determine whether correspondence between fields was random or due to different degrees of interest in certain articles (Fig. @fig:distribution E). <!-- I am not sure I get what you're trying to say here about E - aren't you going to go into this for the next section? I also don't get how the ECDF is getting you to random or not. What about dropping panel E here? It feels like that might be the cleanest way to avoid having to get into things too early and confusing your reader. -->
+Investigating manuscripts that appeared in pairs of fields, we found that the distribution of importances matched the network more than that of the alternative topic area of the manuscript (Fig. @fig:distribution B, C, D).
 
 ![ 
 Differences in the distribution of PageRanks between fields.
@@ -232,7 +233,7 @@ In addition to papers with large differences between fields, each field pair has
 While some papers may be influential in multiple fields, others have more field-specific import.
 
 It is impossible to describe all the field pairs and relevant differences between fields within the space of a journal article.
-We have developed a web server that displays the percentiles for all pairs of fields in our dataset with at least 1000 shared articles (Fig. @fig:percentile D), which can be accessed at TODO.
+Instead, we have developed a web server that displays the percentiles for all pairs of fields in our dataset with at least 1000 shared articles (Fig. @fig:percentile D), which can be accessed at https://www.indices.greenelab.com.
 We hope that the availability of the web server and the reproducibility of our code will assist other scientists in uncovering new insights from this dataset.
 
 ![ 
@@ -263,15 +264,15 @@ D) A screenshot of the webserver showing the percentile score difference and jou
 
 | Immunochemistry Percentile| Anatomy Percentile | Title | Reference |
 |----------|----------|----------|----------|
-| 100 | 45 | Immunoelectron microscopic exploration of the Golgi complex | [@doi:10.1177/31.8.6863900] |
+| 100 | 45 | Immunoelectron microscopic exploration of the Golgi complex | [@immunoelectron] |
 | 100 | 14 | Immunocytochemical and electrophoretic analyses of changes in myosin gene expression in cat posterior temporalis muscle during postnatal development | [@doi:10.1007/bf01682147] |
 | 98 | 5 | Electron microscopic demonstration of calcitonin in human medullary carcinoma of thyroid by the immuno gold staining method | [@doi:10.1007/bf00514331] |
 | 12 | 100 | Grafting genetically modified cells into the rat brain: characteristics of E. coli β-galactosidase as a reporter gene | [@doi:10/dptnbm] |
 | 12 | 100 | Vitamin-D-dependent calcium-binding-protein and parvalbumin occur in bones and teeth | [@doi:10.1007/bf02405306] |
 | 3 | 100 | Mapping of brain areas containing RNA homologous to cDNAs encoding the alpha and beta subunits of the rat GABAA gamma-aminobutyrate receptor | [@doi:10.1073/pnas.85.20.7815] |
-| 100 | 100 | Studies of the HER-2/neu Proto-Oncogene in Human Breast and Ovarian Cancer| [@doi:10.1126/science.2470152] |
+| 100 | 100 | Studies of the HER-2/neu Proto-Oncogene in Human Breast and Ovarian Cancer| [@her2] |
 | 100 | 100 | Expression of c-fos Protein in Brain: Metabolic Mapping at the Cellular Level| [@doi:10.1126/science.3131879] |
-| 100 | 100 | Proliferating cell nuclear antigen (PCNA) immunolocalization in paraffin sections: An index of cell proliferation with evidence of deregulated expression in some neoplasms| [@doi:10.1126/science.3131879] |
+| 100 | 100 | Proliferating cell nuclear antigen (PCNA) immunolocalization in paraffin sections: An index of cell proliferation with evidence of deregulated expression in some neoplasms| [@doi:10.1002/path.1711620403] |
 
 **Table 2**: Immunochemistry/anatomy papers of interest 
 
@@ -283,7 +284,7 @@ D) A screenshot of the webserver showing the percentile score difference and jou
 | 0 | 100 | MeltDB: a software platform for the analysis and integration of metabolomics experiment data| [@doi:10.1093/bioinformatics/btn452] |
 | 0 | 98 | In silico fragmentation for computer assisted identification of metabolite mass spectra| [@doi:10.1186/1471-2105-11-148] |
 | 0 | 100 | The Metabonomic Signature of Celiac Disease| [@doi:10.1021/pr800548z] |
-| 91 | 70 | Visualization of omics data for systems biology| [@doi:10.1186/1471-2105-11-148] |
+| 91 | 70 | Visualization of omics data for systems biology| [@doi:10.1038/nmeth.1436] |
 | 0 | 16 | FunRich: An open access standalone functional enrichment and interaction network analysis tool| [@doi:10.1002/pmic.201400515] |
 | 0 | 5 | Proteomic and Metabolomic Characterization of COVID-19 Patient Sera| [@doi:10.1016/j.cell.2020.05.032] |
 
@@ -295,7 +296,7 @@ D) A screenshot of the webserver showing the percentile score difference and jou
 | 100 | 1 | A database for post-genome analysis| [@doi:10/cfgb98] |
 | 100 | 1 | Use of mass spectrometry-derived data to annotate nucleotide and protein sequence databases| [@doi:10/ch565r] |
 | 12 | 100| Genetic Discrimination: Perspectives of Consumers | [@doi:10.1126/science.274.5287.621] |
-| 0 | 81 | Committee Opinion No. 690: Carrier Screening in the Age of Genomic Medicine | [@doi:10.1097/aog.0000000000001951 ] |
+| 0 | 81 | Committee Opinion No. 690: Carrier Screening in the Age of Genomic Medicine | [@committee] |
 | 23 | 100 | Public health genomics: The end of the beginning| [@doi:10.1097/gim.0b013e31821024ca] |
 | 100 | 99 | Initial sequencing and analysis of the human genome| [@doi:10.1038/35057062] |
 | 100 | 100 | An STS-Based Map of the Human Genome| [@doi:10.1126/science.270.5244.1945] |
@@ -317,7 +318,7 @@ Fortunately, all the papers in Pubmed Central (https://www.ncbi.nlm.nih.gov/pmc/
 While MeSH terms are varied and numerous, the subheadings of the Natural Science Disciplines (H01) category fit our needs.
 However, MeSH terms are hierarchical and vary greatly in their size and specificity.
 To extract a balanced set of terms, we recursively traversed the tree and selected headings having at least 10000 DOIs without having multiple children that also meet the cutoff.
-Our resulting headings contained 45 terms, from "Acoustics" to "Water Microbiology."
+Our resulting headings were comprised of 45 terms, from "Acoustics" to "Water Microbiology."
 
 #### Building single heading citation networks
 The COCI dataset consists of pairs of Digital Object Identifiers (DOIs).
@@ -325,32 +326,28 @@ To change these pairs into a form we could run calculations on, we needed to con
 To do so, we created 45 empty networks, one for each previously selected MeSH term.
 We then iterated over each pair of DOIs in COCI and added them to a network if the DOIs corresponded to two journal articles written in English, both of which were tagged with the corresponding MeSH heading.
 
-#### Building combined networks
+
 Because we were interested in the differences between fields, we also needed to build networks from pairs of MeSH headings.
 These networks were built via the same process, except that instead of keeping articles corresponding to a single DOI we added a citation to the network if both articles were in the pair of fields, even if the citation occurred across fields.
 Running this network-building process yielded 990 two-heading networks.
 
-#### Shuffling networks
 Sampling a graph from the degree distribution while preserving the distribution of degrees in the network was challenging.
 Because citation graphs are directed, it is impossible to simply swap pairs of edges and end up with a graph uniformly sampled from the space.
 Instead, a more sophisticated three-edge swap method must be used [@arxiv:0905.4913].
-Because this algorithm had not been implemented yet in NetworkX [@networkx], we implemented the code to perform shuffles and submitted our change to the library. <!-- DO YOU WANT TO CITE THE PULL REQUEST HERE VIA URL? -->
+Because this algorithm had not been implemented yet in NetworkX [@networkx], we implemented the code to perform shuffles and submitted our change to the library (https://github.com/networkx/networkx/pull/5663).
 With the shuffling code implemented, we created 100 shuffled versions of each of our combined networks to act as a background distribution against which we could compare metrics.
 
-#### Splitting networks 
 Once we had a collection of shuffled networks, we needed to split them into their constituent fields.
 To do so, we reduced the network to solely the nodes that were present in the single heading citation network and kept only citations between these nodes.
 
-#### Running PageRank
-We used the NetworkX implementation of PageRank with default parameters to evaluate paper importance within fields.
+#### Metrics
 
-#### Percentile score
+We used the NetworkX implementation of PageRank with default parameters to evaluate paper importance within fields.
 To determine the degree to which the papers' PageRank values were higher or lower than expected, we compared the PageRank values calculated for the true citation networks to the values in the shuffled networks for each paper.
 We then recorded the percent of shuffled networks where the paper had a lower PageRank than the true network to derive a single number that described these values.
 For example, if a paper had a higher PageRank in the true network than in all the shuffled networks it received a percentile of 100.
 Likewise, if it had a lower PageRank in the true network than in all the shuffled networks it received a percentile of 0.
 
-#### Differences in percentiles
 
 A convenient feature of the percentiles was that they were directly comparable between fields.
 For manuscripts represented in two fields, the difference in scores was used to estimate its variability in importance.
@@ -381,11 +378,11 @@ Global rankings or efforts to normalize out field-specific effects obscure meani
 As with any study, this research has certain limitations.
 One example is our selection of MeSH terms to represent fields.
 We used MeSH because it is a widely-annotated set of subjects in biomedicine and thresholded MeSH term sizes to balance having enough observations to calculate appropriate statistics with having sufficient granularity to capture fields.
-This resulted in fields at the granularity of "biophysics" and "ecology."
+This selection process resulted in fields at the granularity of "biophysics" and "ecology."
 We also have to select a number of swaps to generate a background distribution of PageRanks for each field pair.
 We selected three times as many swaps as edges, where each swap modifies three edges, but certain network structures may require a different number.
 
-We also note that there are inherent issues with assigning manuscript importance scores.
+We also note that there are inherent issues with the premise of ranking manuscripts' importance.
 We sought to understand the extent to which such rankings were stable between fields after correcting for field-specific citation practices.
 We found limited stability between fields, mostly between closely-related fields, suggesting that the concept of a universal ranking of importances is difficult to justify.
 In the way that reducing a distribution to a Journal Impact Factor distorts assessment, attempting to use a single universal score to represent importance across fields poses similar challenges at the level of individual manucripts.
@@ -402,16 +399,16 @@ Our application can reveal these manuscripts for MeSH field pairs, and our sourc
 
 
 ### Code and Data Availability                                                                                                                                                                              
-The code to reproduce this work can be found at https://github.com/greenelab/indices.                                                                                        
-The data used for this project can be downloaded from Zenodo at TODO.
+The code to reproduce this work can be found at https://github.com/greenelab/indices.
+The data used for this project is publicly available and can be downloaded with the code provided above. 
 Our work meets the bronze standard of reproducibility [@doi:10.1038/s41592-021-01256-7] and fulfills aspects of the silver and gold standards including deterministic operation.
-                                                                                                                                                                                                            
+
 ### Acknowledgements                                                                                                                                                                                        
-We would like to thank Jake Crawford for reviewing code that went into this project.                                                                                                      
-We would also like to thank the past and present members of GreeneLab who gave feedback on this project during lab meetings.                                                                                
+We would like to thank Jake Crawford for reviewing code that went into this project and Faisal Alquaddoomi for figuring out the web server hosting.
+We would also like to thank the past and present members of GreeneLab who gave feedback on this project during lab meetings.
 This work utilized resources from the University of Colorado Boulder Research Computing Group, which is supported by the National Science Foundation (awards ACI-1532235 and ACI-1532236).
-                                                                                                                                                                                                            
-#### Funding                                                                                                                                                                                                
+
+#### Funding
 This work was supported by grants from the National Institutes of Health’s National Human Genome Research Institute (NHGRI) under award R01 HG010067 and the Gordon and Betty Moore Foundation (GBMF 4552) to CSG.
 The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. 
 
