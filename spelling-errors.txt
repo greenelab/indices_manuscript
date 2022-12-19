@@ -30,7 +30,7 @@ Genomic
 Glycine
 GreeneLab
 greenescientist
-heil
+Heil
 homogenous
 immuno
 immunochemical
@@ -85,6 +85,6 @@ templated
 temporalis
 thresholded
 tvt
-vivo
+Vivo
 webserver
 WSXM

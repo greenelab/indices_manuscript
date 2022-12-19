@@ -5,7 +5,7 @@ keywords:
 - pagerank
 - science of science
 lang: en-US
-date-meta: '2022-12-06'
+date-meta: '2022-12-19'
 author-meta:
 - Benjamin J. Heil
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
   <meta property="og:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
   <meta property="twitter:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
-  <meta name="dc.date" content="2022-12-06" />
-  <meta name="citation_publication_date" content="2022-12-06" />
+  <meta name="dc.date" content="2022-12-19" />
+  <meta name="citation_publication_date" content="2022-12-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/indices_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/indices_manuscript/v/88ec8604abd54783ec84f752ff9fafbfb1f40b21/))
+([permalink](https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/))
 was automatically generated
-from [greenelab/indices_manuscript@88ec860](https://github.com/greenelab/indices_manuscript/tree/88ec8604abd54783ec84f752ff9fafbfb1f40b21)
-on December 6, 2022.
+from [greenelab/indices_manuscript@77a9ab2](https://github.com/greenelab/indices_manuscript/tree/77a9ab25d4559b5e9c638372e93a349375444851)
+on December 19, 2022.
 </em></small>
 
 ## Authors
