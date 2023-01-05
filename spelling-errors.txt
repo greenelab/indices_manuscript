@@ -15,7 +15,7 @@ COVID
 CSG
 dataset
 DOIs
-eigenfactor
+Eigenfactor
 electrophoretic
 erythematosus
 explorable
@@ -44,7 +44,7 @@ manucripts
 medullary
 MeltDB
 Metabolomic
-Metabolomics
+metabolomics
 Metabonomic
 methacrylate
 micelles
@@ -59,7 +59,7 @@ NetworkX
 neu
 NHGRI
 omics
-PageRank
+pagerank
 PageRanks
 parvalbumin
 PCNA
@@ -68,7 +68,7 @@ phospholipid
 Photostable
 Plotly
 Proteomic
-Proteomics
+proteomics
 Proto
 quartile
 reproducibility
@@ -85,6 +85,6 @@ templated
 temporalis
 thresholded
 tvt
-Vivo
+vivo
 webserver
 WSXM

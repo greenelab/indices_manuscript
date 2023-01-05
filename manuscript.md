@@ -5,7 +5,7 @@ keywords:
 - pagerank
 - science of science
 lang: en-US
-date-meta: '2022-12-19'
+date-meta: '2023-01-05'
 author-meta:
 - Benjamin J. Heil
 - Casey S. Greene
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
   <meta property="og:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
   <meta property="twitter:title" content="The Field-Dependent Nature of PageRank Values in Citation Networks" />
-  <meta name="dc.date" content="2022-12-19" />
-  <meta name="citation_publication_date" content="2022-12-19" />
+  <meta name="dc.date" content="2023-01-05" />
+  <meta name="citation_publication_date" content="2023-01-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/indices_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/indices_manuscript/v/77a9ab25d4559b5e9c638372e93a349375444851/))
+([permalink](https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/))
 was automatically generated
-from [greenelab/indices_manuscript@77a9ab2](https://github.com/greenelab/indices_manuscript/tree/77a9ab25d4559b5e9c638372e93a349375444851)
-on December 19, 2022.
+from [greenelab/indices_manuscript@b56c696](https://github.com/greenelab/indices_manuscript/tree/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d)
+on January 5, 2023.
 </em></small>
 
 ## Authors
@@ -117,14 +117,14 @@ Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
 
 The value of scientific research can be easier to assess at the collective level than at the level of individual contributions.
 Several journal-level and article-level metrics aim to measure the importance of journals or individual manuscripts.
-However, many are citation-based and citation practices between fields.
+However, many are citation-based and citation practices vary between fields.
 To account for these differences, scientists have devised normalization schemes to make metrics more comparable across fields.
 We use PageRank as an example metric and examine the extent to which field-specific citation norms drive estimated importance differences.
-We recapitulate differences in journal and article PageRanks between fields.
-We find that manuscripts shared between fields have different PageRanks depending on which field's citation network the metric is calculated in.
-We implement a degree-preserving graph shuffling algorithm to generate a null distribution of similar networks and find differences more likely attributed to field-specific preferences than citation patterns.
-While differences exist between fields' metric distributions, applying metrics in a field-aware manner rather than using normalized global metrics avoids losing important information about article preferences.
-Our results also suggest that assigning a single importance value to a manuscript may not be a useful construct, as the importance of each manuscript varies by the reader's field.
+In doing so, we recapitulate differences in journal and article PageRanks between fields.
+We also find that manuscripts shared between fields have different PageRanks depending on which field's citation network the metric is calculated in.
+We implement a degree-preserving graph shuffling algorithm to generate a null distribution of similar networks and find differences more likely attributed to field-specific preferences than citation norms.
+Our results suggest that while differences exist between fields' metric distributions, applying metrics in a field-aware manner rather than using normalized global metrics avoids losing important information about article preferences.
+They also imply that assigning a single importance value to a manuscript may not be a useful construct, as the importance of each manuscript varies by the reader's field.
 
 
 ## Introduction
