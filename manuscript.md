@@ -42,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/indices_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/indices_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/indices_manuscript/v/9c5a8ea60dcad08a408bd1329f739cbc6849b0ba/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/9c5a8ea60dcad08a408bd1329f739cbc6849b0ba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/indices_manuscript/v/9c5a8ea60dcad08a408bd1329f739cbc6849b0ba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/indices_manuscript/v/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d/))
+([permalink](https://greenelab.github.io/indices_manuscript/v/9c5a8ea60dcad08a408bd1329f739cbc6849b0ba/))
 was automatically generated
-from [greenelab/indices_manuscript@b56c696](https://github.com/greenelab/indices_manuscript/tree/b56c696edb7fabf9499d87b9cd74ac4fb7ab365d)
+from [greenelab/indices_manuscript@9c5a8ea](https://github.com/greenelab/indices_manuscript/tree/9c5a8ea60dcad08a408bd1329f739cbc6849b0ba)
 on January 5, 2023.
 </em></small>
 

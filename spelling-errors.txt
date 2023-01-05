@@ -15,7 +15,7 @@ COVID
 CSG
 dataset
 DOIs
-Eigenfactor
+eigenfactor
 electrophoretic
 erythematosus
 explorable
@@ -59,7 +59,7 @@ NetworkX
 neu
 NHGRI
 omics
-pagerank
+PageRank
 PageRanks
 parvalbumin
 PCNA
@@ -85,6 +85,6 @@ templated
 temporalis
 thresholded
 tvt
-vivo
+Vivo
 webserver
 WSXM
