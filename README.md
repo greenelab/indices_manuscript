@@ -1,5 +1,4 @@
-# WIP manuscript on citation indices
-
+# The Field-Dependent Nature of PageRank Values in Citation Networks
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/indices_manuscript/)
@@ -8,10 +7,16 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+The value of scientific research can be easier to assess at the collective level than at the level of individual contributions.
+Several journal-level and article-level metrics aim to measure the importance of journals or individual manuscripts.
+However, many are citation-based and citation practices vary between fields.
+To account for these differences, scientists have devised normalization schemes to make metrics more comparable across fields.
+We use PageRank as an example metric and examine the extent to which field-specific citation norms drive estimated importance differences.
+In doing so, we recapitulate differences in journal and article PageRanks between fields.
+We also find that manuscripts shared between fields have different PageRanks depending on which field's citation network the metric is calculated in.
+We implement a degree-preserving graph shuffling algorithm to generate a null distribution of similar networks and find differences more likely attributed to field-specific preferences than citation norms.
+Our results suggest that while differences exist between fields' metric distributions, applying metrics in a field-aware manner rather than using normalized global metrics avoids losing important information about article preferences.
+They also imply that assigning a single importance value to a manuscript may not be a useful construct, as the importance of each manuscript varies by the reader's field.
 
 ## Manubot
 
